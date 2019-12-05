@@ -9,14 +9,7 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="jumbotron">
-          <h1 class="display-4">Maëva BADIN</h1>
-          <p class="lead">
-            You want weapons. We're in a library. Books are the best weapon in the world.
-            This room's the greatest arsenal we could have. Arm yourself!
-          </p>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="#">CV Numérique</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -32,6 +25,24 @@
             </ul>
           </div>
         </nav>
+      </div>
+      <div class="row">
+        <div class="jumbotron">
+          <h1 class="display-4">Maëva BADIN</h1>
+          <p class="lead">
+            You want weapons. We're in a library. Books are the best weapon in the world.
+            This room's the greatest arsenal we could have. Arm yourself!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <footer class="text-center fixed-bottom bg-dark">
+          <span class="badge badge-secondary"><a class="text-decoraction-none text-white m-2 p-2" href="#contactMe">web.maevabadin@gmail.com</a></span>
+          <span class="badge badge-secondary"><a class="text-decoraction-none text-white m-2 p-2" href="https://www.linkedin.com/in/maevabadin/">Linkedin</a></span>
+          <span class="badge badge-secondary"><a class="text-decoraction-none text-white m-2 p-2" href="https://www.facebook.com/web.maevabadin">Facebook</a></span>
+          <span class="badge badge-secondary"><a class="text-decoraction-none text-white m-2 p-2" href="https://twitter.com/web_maevabadin">Twitter</a></span>
+          <span class="badge badge-secondary">06.52.67.65.25</span>
+        </footer>
       </div>
     </div>
     <div class="container">
@@ -67,23 +78,25 @@
       <div class="row" id="contactMe">
         <div class="col-12" id="aboutMe">
           <h2 class="display-4">Me contacter:</h2>
+          <!-- Mettre en place un formulaire de contact -->
+          <form action="index.html" method="post">
+            <div class="form-group">
+              <label for="yourMailAddress">Votre email</label>
+              <input type="email" class="form-control" id="yourMailAddress" name="yourMailAddress" placeholder="votre-adresse@mail.domaine" />
+            </div>
+            <div class="form-group">
+              <label for="yourMessage">Votre message</label>
+              <textarea class="form-control" id="yourMessage" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Envoyer</button>
+          </form>
           <p class="text-justify">
-            Pour me contacter, retrouvez toutes les informations disponibles en <a href="#contactInfosFooter">bas de cette page</a>.
+            Pour me contacter, retrouvez aussi mes informations personnelles disponibles en bas de cette page.
             Merci :)
           </p>
-          <!-- Mettre en place un formulaire de contact -->
         </div>
       </div>
     </div>
-    <footer class="text-center" id="contactInfosFooter">
-      <ul class="list-group">
-        <li class="list-group-item">06.52.67.65.25</li>
-        <li class="list-group-item"><a href="#contactMe">web.maevabadin@gmail.com</a></li>
-        <li class="list-group-item"><a href="https://www.linkedin.com/in/maevabadin/">Linkedin</a></li>
-        <li class="list-group-item"><a href="https://www.facebook.com/web.maevabadin">Facebook</a></li>
-        <li class="list-group-item"><a href="https://twitter.com/web_maevabadin">Twitter</a></li>
-      </ul>
-    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
